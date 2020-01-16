@@ -1,6 +1,8 @@
 import React from 'react';
-import {StyleSheet, FlatList, SafeAreaView, Text, View,Image, TextInput,ScrollView } from 'react-native';
-import Home from './component/Home'
+import {StyleSheet, FlatList, SafeAreaView, Text, View,Image, TextInput,
+ScrollView } from 'react-native';
+import AppNavigation from './src/config/navigation'
+// import Home from './component/Home'
 // import Constants from 'expo-constants';
 
 // const HelloWorldApp = () => {
@@ -29,62 +31,76 @@ import Home from './component/Home'
 
         // Flatlist
 
-        const DATA = [
-          {
-            id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
-            title: 'First Item',
-          },
-          {
-            id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
-            title: 'Second Item',
-          },
-          {
-            id: '58694a0f-3da1-471f-bd96-145571e29d72',
-            title: 'Third Item',
-          },
-        ];
-        const MYDATA = [
-          {
-            name:"Mohsin",
-            marks:99,
-          },
-        ];
+        // const DATA = [
+        //   {
+        //     id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
+        //     title: 'First Item',
+        //   },
+        //   {
+        //     id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
+        //     title: 'Second Item',
+        //   },
+        //   {
+        //     id: '58694a0f-3da1-471f-bd96-145571e29d72',
+        //     title: 'Third Item',
+        //   },
+        // ];
+        // const MYDATA = [
+        //   {
+        //     name:"Mohsin",
+        //     marks:99,
+        //   },
+        // ];
         
-        const Item = ({ title }) => (
-          <View style={styles.item}>
-            {/* {console.log("Title",title)} */}
-            <Text style={styles.title}>{title}</Text>
-          </View>
-        );
+        // const Item = ({ title }) => (
+        //   <View style={styles.item}>
+        //     {/* {console.log("Title",title)} */}
+        //     <Text style={styles.title}>{title}</Text>
+        //   </View>
+        // );
         
-        const App = () => {
-          const renderItem = ({ item }) => (
-            <Item title={item.title} />
+        // const App = () => {
+        // //   const renderItem = ({ item }) => (
+        // //     <Item title={item.title} />
             
-          );
+        // //   );
         
-          return (
-            <SafeAreaView style={styles.container}>
-              <FlatList
-                data={DATA}
-                renderItem={renderItem}
-                keyExtractor={item => item.id}
-              />
-              <Home/>
-              <Test name="Ahmed"/>
-              <Test name="Zahid"/>
-              <Test name="Wasif"/>
-              <Test name="Mohsin"/>
-            </SafeAreaView>
-          );
-        }
+        // //   return (
+        // //     <SafeAreaView style={styles.container}>
+        // //       <FlatList
+        // //         data={DATA}
+        // //         renderItem={renderItem}
+        // //         keyExtractor={item => item.id}
+        // //       />
+        // //       <Home/>
+        // //       <Test name="Ahmed"/>
+        // //       <Test name="Zahid"/>
+        // //       <Test name="Wasif"/>
+        // //       <Test name="Mohsin"/>
+        // //     </SafeAreaView>
+        // //   );
+        // // }
 
-        // Multiple Components with passing Props
-        const Test=(props)=>{
+        // // // Multiple Components with passing Props
+        // // const Test=(props)=>{
+        // //   return(
+        // //     <View>
+        // //       <Text>Hello I am Test component with props {props.name}</Text>
+        // //     </View>
+        // //   )
+        // // }
+
+
+
+
+        // // For App Navigation
+        
+        
+        const App=()=>{
           return(
-            <View>
-              <Text>Hello I am Test component with props {props.name}</Text>
-            </View>
+            // <View>
+                <AppNavigation/>
+            // </View>
           )
         }
 
@@ -122,3 +138,8 @@ text: {
 
 // export default HelloWorldApp;
 export default App;
+
+
+
+
+
