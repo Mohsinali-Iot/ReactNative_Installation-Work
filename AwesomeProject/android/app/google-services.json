@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "5193920757",
+    "firebase_url": "https://reactapp-f2960.firebaseio.com",
+    "project_id": "reactapp-f2960",
+    "storage_bucket": "reactapp-f2960.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5193920757:android:1cff1400926d431c1495bc",
+        "android_client_info": {
+          "package_name": "com.awesomeproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5193920757-9n7v7cg6nnci2ngt63rngrgt31ajm3cf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3vbX35zHfTzlykjOUx5OwXcSrSbes8Lk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5193920757-9n7v7cg6nnci2ngt63rngrgt31ajm3cf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -5,9 +5,11 @@ import {RNCamera} from 'react-native-camera';
 function Camera(){
     return(
         // <View>
+          // {/* <Text>Camera</Text> */}
             <RNCamera 
-            style={styles.preview}
-            type={RNCamera.Constants.Type.back}/>
+            style={styles.preview} 
+            type={RNCamera.Constants.Type.back}
+            />
         // </View>
     )
 }

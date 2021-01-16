@@ -3,6 +3,7 @@ import {View,Text} from 'react-native';
 
 import Home from '../screen/Home'
 import Camera from '../screen/camera'
+// import ImagePicker from '../screen/imagepicker'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -22,6 +23,7 @@ function AppNavigation() {
       <Stack.Navigator>
         <Stack.Screen name="HomePage" component={Home} />
         <Stack.Screen name="Camera" component={Camera} />
+        {/* <Stack.Screen name="Choose Photo From Gallery" component={ImagePicker} /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
